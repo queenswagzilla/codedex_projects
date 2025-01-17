@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kelp! The Water's Fine.</title>
+  <style>
+    body{
+      right: 0px;
+      width: auto;
+      border: 3px solid teal;
+      padding: 10px;
+    }
+
+    h1{
+      font-family: garamond;
+      font-size: 28px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      color: teal;
+    }
+
+    h3{
+          font-family: garamond;
+          font-size: 23px;
+          font-weight: bold;
+          font-style: italic;
+          text-align: center;
+          color: teal;
+    }
+
+    label{
+      font-family: garamond;
+      font-size: 17px;
+      font-style: italic;
+      position: absolute;
+      margin: auto;
+      width: 83%;
+      border: 3px solid teal;
+      text-align: center;
+    }
+
+    input{
+      font-family: garamond;
+      font-size: 15px;
+      text-align: center;
+
+    }
+  </style>
+</head>
+<!--**************BREAK*******************-->
+<body>
+  <h1>Welcome to Kelp!</h1>
+  <h3>Come on in, and tell us if the water's fine.</h3>  
+    <form>
+      <label for="mername">Mermaid Name: </label><br><br>
+       <div style="text-align: center;"">
+        <input type="text" required id="mername"><br><br>
+       </div>
+      <label for="water_body">Body Type: </label><br><br>
+       <div style="text-align: center;"">
+        <input type="radio" name="water_body">Ocean
+        <input type="radio" name="water_body">Sea
+        <input type="radio" name="water_body">Lake
+        <input type="radio" name="water_body">River
+        <input type="radio" name="water_body">Pond<br><br>
+       </div>
+      <label for="location">Location Name: </label><br><br>
+       <div style="text-align: center;"">
+        <input id="location" type="text" required><br><br>
+       </div>
+      <label for="return_trip">Would you visit this ocean again? </label><br><br>
+       <div style="text-align: center;""> 
+        <input type="radio" name="return_trip">Yes
+        <input type="radio" name="return_trip">No
+        <input type="radio" name="return_trip">Maybe <br><br>
+       </div>
+      <label for="rating">Please rate this ocean: </label><br><br>
+       <div style="text-align: center;""> 
+        <input type="number" max="5" min="1" id="rating" required><br><br>
+       </div>
+      <label for="review">Please leave a review: </label><br><br>
+       <div style="text-align: center;"">
+        <textarea id="review" max="250"></textarea><br><br>
+       </div>
+       <div style="text-align: center;"">
+        <input type="submit">
+       </div>
+    </form>
+</body>
+</html>
