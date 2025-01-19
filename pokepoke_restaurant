@@ -1,0 +1,127 @@
+<!-- Write code below 💖-->
+
+<!DOCTYPE html>
+<html>
+  <!--*****BEGIN HEAD**********-->
+  <head>
+    <title>PokéPoké: A Poké Restaurant</title>
+    <style>
+      body{
+        background-color: #030617;
+        margin: 30px;
+        padding: 10px;
+        border: 2px solid pink;
+        border-radius: 8px;
+      }
+      h1, h2, h3{
+        color:pink;
+        font-family: courier;
+        text-align: center;
+      }
+      p{
+        color: white;
+        font-family: courier;
+        text-align: center;
+      }
+      nav{
+        link-color: white;
+        font-family: courier;
+        text-align: center;
+      }
+      a{
+        color: teal;
+      }
+      img {
+        border-radius: 8px;
+        
+      }
+
+      input[type=submit] {
+        padding:5px 15px; 
+        background:pink; 
+        border:0 none;
+        border-radius: 8px; 
+        font-family:courier;
+      }
+
+      .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+
+      hr{
+        border-top: 1px solid pink;
+      }
+    </style>
+  </head>
+
+
+  <!--******BEGIN BODY**********-->
+  <body>
+    <header>
+      <img width=100% id="header-img" src="https://imgcdn.stablediffusionweb.com/2024/11/16/2a9d54d5-ac6e-4c5d-a808-9586ea70422e.jpg" class="center">
+">
+      <h1>PokéPoké</h1>
+      <h2>A Poké(mon) Restaurant</h2>
+
+      <nav>
+        <h4><a href="#menu">Menu<a> | <a href="#order-form">Order Form</a></h4>
+      </nav>
+    </header>
+
+
+    <main>
+      <h2 id="menu">Menu</h2>
+      <article>
+        <img src="https://preview.redd.it/501a97rqcxy31.png?width=640&crop=smart&auto=webp&s=e3238ba53e1c74e65a3eccaa6e8e218922495d28" width="300" class="center">
+        <h3>SlowPoké</h3>
+        <p>Slowpoke tail on a bed of rice, topped with a rich spicy mayo. <br><i>$15.99</i></p>
+      </article>
+      <article>
+        <img src="https://press.invincible.ink/wp-content/uploads/2023/03/pokemon-food-04.jpg.webp" width="300" class="center">
+        <h3>Miso Magikarp</h3>
+        <p>Thinly sliced, de-boned Magikarp marinated in a thin rice-wine vinaigrette. Served on greens. <br><i>$24.99</i></p>
+      </article>
+      <article>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6wc_dmL08tY1Zb9JFuXFFEgTNhYLlFb-DsA&s" width="300" class="center">
+        <h3>Tatsugiri Delight</h3>
+        <p>A live Tatsugiri on a bed of warm sticky rice. Eat it while it's sleepy! <br><i>$64.99</i></p>
+      </article><hr>
+
+      <h2 id="order-form">Order Form</h2>
+      <div style="color:white; font-family:courier;">
+      <form>
+        <div style="color:pink;"><label for="slowpoke"><b>SlowPoké</b> </label><input type="number" min="0" id="slowpoke"><br>
+        <label>Add-ons</label><br></div>
+          <input type="checkbox">Scallions<br>
+          <input type="checkbox">Sweet Corn<br>
+          <input type="checkbox">Chili Threads<br><br>
+        <div style="color:pink;"><label for="magikarp"><b>Miso Magikarp</b> </label><input type="number" min="0" id="magikarp"><br>
+        <label>Add-ons</label><br></div>
+          <input type="checkbox">Scallions<br>
+          <input type="checkbox">Sweet Corn<br>
+          <input type="checkbox">Chili Threads<br><br>
+        <div style="color:pink;"><label for="magikarp"><b>Tatsugiri Delight</b> </label><input type="number" min="0" id="magikarp"><br>
+        <label>Add-ons</label><br></div>
+          <input type="checkbox">Scallions<br>
+          <input type="checkbox">Sweet Corn<br>
+          <input type="checkbox">Chili Threads<br><br>
+
+        <div style="color:pink;"><label for="requests"><b>Special Requests</b></label></div>
+        <textarea rows="5" cols="30" placeholder="Please let us know if you would like to add utensils or condiments!"></textarea><br><br>
+        <div style="text-align:center"><label for="checkout" >Ready To Eat?</label><br><br>
+        <input type="submit" value="Go To Checkout" id="checkout"></div>
+      </form>
+      </div>
+
+    </main>
+
+
+  <!--******BEGIN FOOTER**********-->
+    <footer>
+      <p>Made with love by <a href="https://x.com/queenswagzilla" target="_blank">@QueenSwagzilla</a></p>
+    </footer>
+  </body>
+</html>
